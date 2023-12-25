@@ -1,0 +1,22 @@
+[
+{
+"sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/"
+"relativeurl":"Athletes.csv"
+},
+{
+"sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/"
+"relativeurl":"Coaches.csv"
+},
+{
+"sourceurl": "https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/"
+"relativeurl":"EntriesGender.csv"
+},
+{
+"sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/"
+"relativeurl":"Medals.csv"
+},
+{
+"sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/"
+"relativeurl":"Teams.csv"
+}
+]

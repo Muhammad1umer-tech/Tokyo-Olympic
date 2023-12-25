@@ -1,0 +1,31 @@
+storage account: provides variety of storage solutions.
+blob: unstrucured data
+file: 
+disk: 
+table: stuctured data
+queue: 
+datalake gen2: for big data, 
+
+blob storage: Think of it like a giant digital bucket where you can store all kinds of data, such as files, images, videos, or any other information your applications might need. blob means Binary large object(any type of data == unstructured data). data is stored as blob object. end effective for small dataset rather than data lake.
+
+data lake gen2: provide parallel preprocess on data when it is stored, and we can store data like directories. good for large datasets. run well with other services like spark, azure databricks, data factory, 
+
+structure: data in rows and column 
+semi: xml, json
+unstructured: videos, images, txt
+
+to process structure data:
+azure sql database: cloud version of mysql provided by microsoft.
+
+
+
+
+dataflow are code free transormation tool
+data factory submit these data flow jobs to databricks and they run a spark job.
+and spark run on ditributed computing.
+
+
+
+inline vs database
+
+

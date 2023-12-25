@@ -1,0 +1,75 @@
+
+3-Envirnment setup
+
+create dashboard
+
+create resource group
+we will placing all the services into resource group.
+
+create services and add them in resource group.
+we will create services like then data factory
+storage account
+data lake gen2 (has hirarical namespace, has some more feature than resource group.) but typically same as storage account
+
+sath sath, hr service ko b pin krte rho..
+ya sirf resouce group ko pin krdo dashboard mai
+
+
+
+4-
+first create container->create source data directory->add all 5 csv files in the source data
+then create link services for both source_data, and destination_data
+then create dataset for source and destination
+
+create first copy activity and copy data from blob storage to data lake.
+
+create validation acitivty. 
+timeout: jb error dyga. (30 sec)
+sleep: kitne kitne second bad chalana. (10 sec). yeh 30 sec mai 3 bar check kryga, agr data na aya timeout ka error else data validation successed.
+
+
+get meta data activity
+if else activity
+delete activity
+
+
+trigger
+event trigger->run on the creation and deletion of blob storage
+schedule trigger->run on specific time
+tumbling trigger-> deal with slicing of the data.
+
+
+
+
+4-
+create link service for http 
+then create source dataset
+
+variable: for hardcoded
+parameter: for dynamic 
+
+
+lookup
+foreach
+
+
+
+
+
+data flow:
+start the data flow debug.
+need to create new dataset. because humne destination sy dataset uthana. esliy
+
+sample: esliy h k, testing wagira sample dataset py krle, py actual work `
+
+filter: jb column k andr work krna ho
+select: column remove, add column name update wagira
+
+
+pivot key: 
+groupby: vo sare column jiska group by krna(other than jisko column banana).
+pivotkey: jo columns chaiy, data factory khudi unique values k column bna dyga
+pivoted column:aggrigrate function apply kr k name dyna.
+
+
+
