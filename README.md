@@ -3,13 +3,13 @@
 
 In this project, I utilized datasets related to the Tokyo Olympics and COVID-19, sourced from Kaggle and the ECDC website. I use Microsoft Azure services to create pipelines, manage storage, perform data transformations, utilize MySQL, and integrate with Power BI.
 
-The main purpose of this project is to get familiar with the services of Microsoft Azure and how to use them in real world scenario. 
+The main purpose of this project is to get familiar with the services of Microsoft Azure and how to use them in real-world scenarios. 
 
 The task involves:
-* Download datasets from kaggle and ECDC website.
-* Create account on Microsoft Azure
-* Create envirnments to use Azure's services.
-* Use AzureDataFactory to create pipelines, link services, datasets and triggers.
+* Download datasets from Kaggle and ECDC website.
+* Create an account on Microsoft Azure
+* Create environments to use Azure's services.
+* Use AzureDataFactory to create pipelines, link services, datasets, and triggers.
 * Use AzureDataFactory's services called DataFlow for the transformation of the data. 
 * Use AzureDatabricks for the transformation of the data.
 * Use Snaypse Analytics for the transformation of the data.
@@ -23,6 +23,82 @@ Tools that I used are:
 ![mysql](https://img.shields.io/badge/Databricks-FF3621.svg?style=for-the-badge&logo=databricks&logoColor=white)
 ![mysql](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![mysql](https://img.shields.io/badge/powerbi-F2C811.svg?style=for-the-badge&logo=powerbi&logoColor=white)
+
+
+
+
+## Environment creation and Dashboard
+
+First, I create a data lake storage account, blob storage, and datafactory environments. Pin them in the dashboard name "Azure-Cloud-Project"
+
+
+![Alt Text](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dashboard.JPG)
+
+I created the container name "sourcedata1" in blob storage and added the required dataset.
+
+
+![Alt Text](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/blobstorage.JPG)
+
+
+
+## Azure Data Pipelines
+**1- Data Ingestion using Azure Blob Storage**
+Firstly, I used Azure Blob Storage to transfer data into Data Lake Gen2.
+
+for the creation of the pipeline, I use Validation, Get Meta Data, If Condition, Copy, Delete, and Web activities.
+
+![Capture3](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/Capture3%20Validationget%20meta%20data%20if%20activity.JPG)
+
+![Capture3 with delete](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/Capture3%20with%20delete.JPG)
+
+
+
+below is the screenshot of the successful run of the pipeline
+
+![all running](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/all%20running%203.JPG)
+
+then, I created a Scheduled trigger to check how pipelines work with triggers
+
+![schedulled trigger proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/schedule%20trigger%20proof.JPG)
+
+
+
+**2- Data Ingestion using Https**
+
+To try the data ingestion from HTTP. I created the JSON file that has links to the datasets.
+
+---
+> To review my JSON file, download it from my repo.
+---
+
+I used Lookup, ForEach, and copy transformation.
+
+![lookup with for each](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/lookup%20with%20for%20each.JPG)
+
+![lookup proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/lookup%20proof.JPG)
+
+I also used parameters, and variables to create a more generic.
+
+![parameter](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/parameter.JPG)
+
+
+## Dataflow
+
+After successfully created pipelines and copy all relevent data in the DataLake Gen2.
+
+I created the First Dataflow in AzureDataFactory and used source, filter, select, pivot, lookup, sink transformation to get the desired results.
+
+![dataflow1](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow1.JPG)
+
+
+
+
+
+
+
+
+
+
 
 
 
