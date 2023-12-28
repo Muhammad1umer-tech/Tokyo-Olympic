@@ -29,7 +29,7 @@ Tools that I used are:
 
 ## Environment creation and Dashboard
 
-First, I create a data lake storage account, blob storage, and datafactory environments. Pin them in the dashboard name "Azure-Cloud-Project"
+First, I create a data lake storage account, blob storage, and datafactory environments, pin them in the dashboard name "Azure-Cloud-Project".
 
 
 ![Alt Text](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dashboard.JPG)
@@ -40,10 +40,14 @@ I created the container name "sourcedata1" in blob storage and added the require
 ![Alt Text](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/blobstorage.JPG)
 
 
+---
+>You can download the dataset from Kaggle by writing the Tokyo Olympic Dataset
+---
 
 ## Azure Data Pipelines
 **1- Data Ingestion using Azure Blob Storage**
-Firstly, I used Azure Blob Storage to transfer data into Data Lake Gen2.
+
+Firstly, I used Azure Blob Storage to copy data into Data Lake Gen2.
 
 for the creation of the pipeline, I use Validation, Get Meta Data, If Condition, Copy, Delete, and Web activities.
 
@@ -57,9 +61,9 @@ below is the screenshot of the successful run of the pipeline
 
 ![all running](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/all%20running%203.JPG)
 
-then, I created a Scheduled trigger to check how pipelines work with triggers
+I also used parameters, and variables to create a more generic pipeline.
 
-![schedulled trigger proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/schedule%20trigger%20proof.JPG)
+![parameter](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/parameter.JPG)
 
 
 
@@ -71,22 +75,21 @@ To try the data ingestion from HTTP. I created the JSON file that has links to t
 > To review my JSON file, download it from my repo.
 ---
 
-I used Lookup, ForEach, and copy transformation.
+I used Lookup, ForEach, and copy activities for the creation of the pipeline.
 
 ![lookup with for each](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/lookup%20with%20for%20each.JPG)
 
 ![lookup proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/lookup%20proof.JPG)
 
-I also used parameters, and variables to create a more generic.
+then, I created a Scheduled trigger to check how the pipeline works with triggers
 
-![parameter](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/parameter.JPG)
-
+![schedulled trigger proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/schedule%20trigger%20proof.JPG)
 
 ## Dataflow
 
-After successfully created pipelines and copy all relevent data in the DataLake Gen2.
+After successfully creating pipelines and copying all relevant data in the DataLake Gen2.
 
-I created the First Dataflow in AzureDataFactory and used source, filter, select, pivot, lookup, sink transformation to get the desired results.
+I created the First Dataflow in AzureDataFactory and used source, filter, select, pivot, lookup, and sink transformation to get the desired results.
 
 ![dataflow1](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow1.JPG)
 
