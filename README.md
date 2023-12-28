@@ -79,6 +79,8 @@ I used Lookup, ForEach, and copy activities for the creation of the pipeline.
 
 ![lookup with for each](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/lookup%20with%20for%20each.JPG)
 
+below is the screenshot of the successful run of the pipeline
+
 ![lookup proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/lookup%20proof.JPG)
 
 then, I created a Scheduled trigger to check how the pipeline works with triggers
