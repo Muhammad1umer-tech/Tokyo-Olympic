@@ -8,8 +8,8 @@ The main purpose of this project is to get familiar with the services of Microso
 The task involves:
 * Download datasets from kaggle and ECDC website.
 * Create account on Microsoft Azure
-* Create envirnments to use the Azure's services.
-* Use AzureDataFactory for the creation of pipelines, link services, datasets and triggers.
+* Create envirnments to use Azure's services.
+* Use AzureDataFactory to create pipelines, link services, datasets and triggers.
 * Use AzureDataFactory's services called DataFlow for the transformation of the data. 
 * Use AzureDatabricks for the transformation of the data.
 * Use Snaypse Analytics for the transformation of the data.
@@ -19,15 +19,9 @@ The task involves:
 Tools that I used are:
 
 ![mysql](https://img.shields.io/badge/Kaggle-20BEFF.svg?style=for-the-badge&logo=kaggle&logoColor=white)
-
 ![microsoft Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=#0078D4)
-
 ![mysql](https://img.shields.io/badge/Databricks-FF3621.svg?style=for-the-badge&logo=databricks&logoColor=white)
-
-
 ![mysql](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
-
-
 ![mysql](https://img.shields.io/badge/powerbi-F2C811.svg?style=for-the-badge&logo=powerbi&logoColor=white)
 
 
