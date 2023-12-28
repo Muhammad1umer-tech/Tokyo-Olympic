@@ -85,13 +85,34 @@ then, I created a Scheduled trigger to check how the pipeline works with trigger
 
 ![schedulled trigger proof](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/schedule%20trigger%20proof.JPG)
 
-## Dataflow
+
+## Azure Data Transformation
 
 After successfully creating pipelines and copying all relevant data in the DataLake Gen2.
 
-I created the First Dataflow in AzureDataFactory and used source, filter, select, pivot, lookup, and sink transformation to get the desired results.
+
+**1- Azure DataFlow**
+
+Now, I have to transform the data 
+
+*   Our first requirement for the transformation of the dataset.
+
+![dataflow objective](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow1.JPG)
+
+
+I created the Dataflow in AzureDataFactory and used source, filter, select, pivot, lookup, and sink transformation to get the desired results and used dataflow pipeline activity to run it.
 
 ![dataflow1](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow1.JPG)
+
+
+*   Our second requirement for the transformation of the dataset.
+
+![dataflow2 objective](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow2%20objective.JPG)
+
+
+I again created the Dataflow in AzureDataFactory and used advanced transformations like conditional split, aggregate, derived, sort along with source, filter, select, pivot, lookup, and sink transformation to get the desired results and use the dataflow pipeline activity to run it.
+
+![dataflow2](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow2.JPG)
 
 
 
