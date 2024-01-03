@@ -26,10 +26,9 @@ Tools that I used are:
 
 
 
-
 ## Environment creation and Dashboard
 
-First, I create a data lake storage account, blob storage, and datafactory environments, pin them in the dashboard name "Azure-Cloud-Project".
+First, I create a data lake storage account, blob storage, and datafactory environments, and pin them in the dashboard name "Azure-Cloud-Project".
 
 
 ![Alt Text](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dashboard.JPG)
@@ -115,6 +114,48 @@ I created the Dataflow in AzureDataFactory and used source, filter, select, pivo
 I again created the Dataflow in AzureDataFactory and used advanced transformations like conditional split, aggregate, derived, sort along with source, filter, select, pivot, lookup, and sink transformation to get the desired results and use the dataflow pipeline activity to run it.
 
 ![dataflow2](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/dataflow2.JPG)
+
+
+
+**3-Azure DataBricks**
+
+I also did data transformation using Azure Databricks just to get an idea about how the Databricks service works.
+
+*   Our requirement for the transformation of the dataset.
+
+![databrick-req](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/databrick-req.JPG)
+
+
+For this, first I create the Databricks service, data bricks cluster, and service principle.
+
+I created a single node cluster with the node type of "Standard_Ds3_v2".
+![cluster](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/cluster.JPG)
+
+
+below is the service principle created by Azure Active Directory
+![service-principle](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/service-principle.JPG)
+
+
+**What is the use of the Service Principle?**
+
+Service Principle is a security identity used by applications, used to give grant access to a specific service for any other service in Azure. A service principal allows services to authenticate and interact with other Azure services.
+
+
+Firstly, I add service principles to role assignment in Azure Data Lake, so that it can access the dataset, and then I mount the storage using Databricks.
+
+![mount-storage](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/mount-storage.JPG)
+
+
+then, I write transformation code using pyspark.
+
+
+![transform-cluster](https://github.com/Muhammad1umer-tech/Tokyo-Olympic-Microsoft-Azure/blob/main/images/transform-cluster.JPG)
+
+
+and I got the desired transformed CSV file.
+---
+> You can view my transformation python file and transformed CSV files from the repository.
+---
 
 
 
