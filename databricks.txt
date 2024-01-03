@@ -1,0 +1,6 @@
+HDInsight supports a variety of open-source big data frameworks, allowing you to choose the right tool for each job. It offers flexibility and scalability for handling different types of workloads within a unified platform.
+
+
+Choose Azure Databricks if you prioritize a collaborative and user-friendly environment, need integrated machine learning capabilities, and primarily work with Apache Spark and py related.
+
+Choose Azure HDInsight if you need flexibility in choosing from a variety of big data frameworks, require tight integration with other Azure services, and have diverse big data workloads.

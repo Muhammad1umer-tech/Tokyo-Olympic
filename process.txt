@@ -72,8 +72,9 @@ groupby: vo sare column jiska group by krna(other than jisko column banana).
 pivotkey: jo columns chaiy, data factory khudi unique values k column bna dyga
 pivoted column:aggrigrate function apply kr k name dyna.
 
-
 dataflow executes the transformation in Spark. and spark workd on distributed computing.
+
+
 
 
 

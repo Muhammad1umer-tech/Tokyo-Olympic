@@ -1,0 +1,16 @@
+what is HD-Insights
+Azure HDInsight is a cloud-based service provided by Microsoft Azure that simplifies the deployment, management, and scaling of big data processing solutions. It is based on popular open-source frameworks such as Apache Hadoop, Apache Spark, Apache Hive, Apache HBase, and others.
+
+
+we use hadoop in our project because: cheap.
+
+we use hivescript in hadoop
+Hive-script:
+Hive is a data warehouse infrastructure built on top of Hadoop that provides a way to query and analyze large datasets stored in Hadoop Distributed File System (HDFS) or other compatible distributed storage systems.
+
+
+why we need managed identity.
+Hd only allow acces to data gen 2 using managed identity.
+
+ambari:
+tool to handle hd-insights cluster

@@ -1,22 +1,27 @@
 [
 {
 "sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/",
+"folder_name": "Athletes",
 "relativeurl":"Athletes.csv"
 },
 {
 "sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/",
-"relativeurl":"Coaches.csv"
+"folder_name": "Coaches", 
+"relativeurl": "Coaches.csv"
 },
 {
 "sourceurl": "https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/",
-"relativeurl":"EntriesGender.csv"
+"folder_name": "EntriesGender",
+"relativeurl": "EntriesGender.csv"
 },
 {
 "sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/",
+"folder_name":"Medals",
 "relativeurl":"Medals.csv"
 },
 {
 "sourceurl":"https://raw.githubusercontent.com/Muhammad1umer-tech/Tokyo-Olympic/main/",
+"folder_name":"Teams",
 "relativeurl":"Teams.csv"
 }
 ]
